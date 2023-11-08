@@ -35,8 +35,8 @@ def generate_text():
         max_tokens=300
     )
 
-    print(response['choices'][0]['message']['content'])
-    return response['choices'][0]['message']['content']
+    print(response.json())
+    return response.json()
 
 
 if __name__ == "__main__":
